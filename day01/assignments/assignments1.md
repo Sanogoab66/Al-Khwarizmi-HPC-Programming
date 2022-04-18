@@ -83,6 +83,7 @@ do i=1, N
     end do
   end do
 end do
+
 ```
 - Compute the cpu time and bandwith for different block size, which block size is the optimal one ? Why ?
 
