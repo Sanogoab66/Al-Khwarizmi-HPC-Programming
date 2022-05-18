@@ -1,12 +1,12 @@
-# write your program here
 
-from pyccel.stdlib.internal.openmp  import omp_get_thread_num
-if __name__=="__main__":
-#$ omp parallel firstprivate(rank,a)
-   a=0
-   rank=omp_get_thread_num()
-   print(f'Hello from the rank {rank} thread')
-   a+=1
-#$ omp end parallel    
+if __name__ == "__main__":
+    from pyccel.stdlib.internal.openmp import omp_get_thread_num, omp_get_num_threads,omp_set_num_threads
+    
+    omp_set_num_threads(4)
+    #$ omp parallel
+    rank = omp_get_thread_num()
+    print('Hello from the rank ',rank,' thread')
+    n = omp_get_num_threads()
+    #$ omp end parallel
 
-print(f'Parallel execution of hello_world with {a}  threads')
+    print('Parallel execution of hello_world with ',n,' threads')
