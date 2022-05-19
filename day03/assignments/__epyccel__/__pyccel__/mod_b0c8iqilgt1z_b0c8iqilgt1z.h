@@ -1,0 +1,8 @@
+#ifndef MOD_B0C8IQILGT1Z_B0C8IQILGT1Z_H
+#define MOD_B0C8IQILGT1Z_B0C8IQILGT1Z_H
+
+#include <stdlib.h>
+
+
+double f(double a);
+#endif // MOD_B0C8IQILGT1Z_B0C8IQILGT1Z_H

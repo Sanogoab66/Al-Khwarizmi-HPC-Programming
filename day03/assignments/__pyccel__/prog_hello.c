@@ -7,9 +7,9 @@ int main()
 {
     int64_t rank;
     int64_t n;
-    omp_set_num_threads(4);
     #pragma omp parallel
     {
+        /*omp_num_threads=2*/
         rank = omp_get_thread_num();
         printf("%s %ld %s\n", "Hello from the rank ", rank, " thread");
         n = omp_get_num_threads();

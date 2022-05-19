@@ -1,0 +1,8 @@
+#ifndef MOD_9MENTL4VHMNW_9MENTL4VHMNW_H
+#define MOD_9MENTL4VHMNW_9MENTL4VHMNW_H
+
+#include <stdlib.h>
+
+
+double f(double a);
+#endif // MOD_9MENTL4VHMNW_9MENTL4VHMNW_H
